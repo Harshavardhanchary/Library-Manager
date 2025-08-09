@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <context:component-scan base-package="springcore" /> 
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+ <!--
+    <bean id="sts" class="springcore.Student">
+        <property name="id" value="23" />
+        <property name="name" value="sam" />
+        <property name="qualification" value="mca" />
+        <property name="address" ref="address" />
+    </bean>
+
+  <bean id="stc" class="springcore.Student">
+    <constructor-arg name="id" value="31" />
+    <constructor-arg name="name" value="sanjy" />
+    <constructor-arg name="qualification" value="btech" />
+    <constructor-arg ref="address" /> 
+</bean>
+
+    <bean id="address" class="springcore.Address">
+        <property name="hNo" value="16" />
+        <property name="street" value="BHEL" />
+        <property name="city" value="HYD" />
+    </bean>--> 
+</beans>
