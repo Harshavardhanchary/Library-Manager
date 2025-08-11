@@ -19,7 +19,7 @@ pipeline {
                 checkout scmGit(
                     branches: [[name: '*/main']],
                     extensions: [],
-                    userRemoteConfigs: [[url: 'https://github.com/Harshavardhanchary/Library-Management-Project.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/Harshavardhanchary/Library-Manager.git']]
                     )
                     echo 'Checkout successful'
             }
@@ -59,7 +59,6 @@ DB_USERNAME=${env.DB_USERNAME}
             steps {
                 echo 'docker build complete'
                 echo "docker running procesess"
-                sh 'docker ps'
                 sh 'docker ps -a'
             }
         }
@@ -99,7 +98,7 @@ DB_USERNAME=${env.DB_USERNAME}
         stage('Checkout Manifests') {
             steps {
                 dir('manifests') {
-                git url: 'https://github.com/Harshavardhanchary/library-management-manifests.git', branch: 'main'
+                git url: 'https://github.com/Harshavardhanchary/Library-Manifests.git', branch: 'main'
                 }
             }
         }
@@ -111,11 +110,11 @@ DB_USERNAME=${env.DB_USERNAME}
                         sh '''
                         git config --global user.name "${GIT_USER}"
                         git config --global user.email "harshavardhanchary7@gmail.com"
-                        git remote set-url origin https://${GIT_USER}:${GIT_PASS}@github.com/Harshavardhanchary/library-management-manifests.git
+                        git remote set-url origin https://${GIT_USER}:${GIT_PASS}@github.com/Harshavardhanchary/Library-Manifests.git
                         chmod +x update-all.sh
                         ./update-all.sh ${BUILD_NUMBER}
                         git add .
-                        git commit -m "updated image number with ${BUILLD_NUMBER}"
+                        git commit -m "updated image number with ${BUILD_NUMBER}"
                         git push origin HEAD:main
                         '''
                         }
