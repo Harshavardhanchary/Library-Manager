@@ -132,7 +132,7 @@ cd Library-Manager
 
 Create a `.env` file in the root directory:
 ```
-mv .env.example .env`
+mv .env.example .env
 ```
   
 
