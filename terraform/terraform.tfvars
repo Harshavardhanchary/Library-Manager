@@ -1,2 +1,2 @@
-image_url = "public.ecr.aws/k3i9e2b8/library-manager:latest"
+image_url = "992059193268.dkr.ecr.ap-south-1.amazonaws.com/library-manager:latest"
 
