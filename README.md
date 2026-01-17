@@ -3,15 +3,15 @@
 # Library-Manager
 <img src="assets/Screenshot (74).png"  width="100%"/>
 
-  
+📹 **Demo Video:**  
+[Video](assets/Library-Manager.mp4)
 
 This project is a fully Dockerized and DevOps-enabled Library Management System. It includes a Spring Boot backend and a MySQL database, orchestrated using Docker Compose and automated with Jenkins CI/CD pipelines.
 
-  
+This project was also executed on AWS using Terraform, leveraging ECS, ALB, RDS (MySQL), VPC, and Route 53. Cloud execution details and proof are documented in the terraform/ folder.
 
 ## Original Repository & Credits
 
-  
 
 - Original repository: [Guntuku12/Library_Manager](https://github.com/Guntuku12/Library_Manager.git)
 
