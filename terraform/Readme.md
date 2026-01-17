@@ -16,7 +16,7 @@ The application is deployed using a **two-tier architecture**:
 A full end-to-end deployment walkthrough (Terraform → ECS → ALB → RDS):
 
 📹 **Demo Video:**  
-[Video](../assets/Library-Manager.mp4)
+[Watch Deployment Demo](https://drive.google.com/file/d/1AJHU3zfPmrfm8C0UYvRoy0DvZaTx6G0t/view?usp=drive_link)
 
 - **Networking**
   - Custom VPC

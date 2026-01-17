@@ -4,7 +4,7 @@
 <img src="assets/Screenshot (74).png"  width="100%"/>
 
 📹 **Demo Video:**  
-[Video](assets/Library-Manager.mp4)
+[Watch Deployment Demo](https://drive.google.com/file/d/1AJHU3zfPmrfm8C0UYvRoy0DvZaTx6G0t/view?usp=drive_link)
 
 This project is a fully Dockerized and DevOps-enabled Library Management System. It includes a Spring Boot backend and a MySQL database, orchestrated using Docker Compose and automated with Jenkins CI/CD pipelines.
 
